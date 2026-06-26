@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# 编辑器 / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 临时文件
+*.tmp
+*.log
+*~
+
+# 本地设计文档 / spec（不上线）
+docs/
