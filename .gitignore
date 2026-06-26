@@ -12,5 +12,8 @@
 *.log
 *~
 
-# 本地设计文档 / spec（不上线）
-docs/
+# 构建产物（从 skill/ 生成，运行 ./scripts/build.sh）
+dist/
+
+# 本地草稿（保留 docs/HARNESSES.md 等已发布文档）
+docs/spec/

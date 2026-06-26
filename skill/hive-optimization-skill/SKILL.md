@@ -1,10 +1,14 @@
 ---
 name: hive-optimization-skill
-description: Use when reviewing or optimizing Hive on MapReduce jobs (table design, HQL queries, JOINs, data skew, parameter tuning). Contains 26 rules — always check relevant rules before giving advice and cite specific rule names in your response.
+description: Reviews and optimizes Hive on MapReduce jobs (table design, HQL, JOINs, data skew, MR tuning). Contains 26 citable rules. Use when optimizing HQL, diagnosing slow Hive jobs, handling skew, or designing partitioned/bucketed tables. Always check rules/ before advising and cite rule names.
 license: Apache-2.0
+compatibility: Apache Hive 2.x / 3.x on MapReduce; storage and SQL rules also apply to Tez/Spark
+user-invocable: true
+argument-hint: "[hql|table-design|join|skew|params]"
 metadata:
   author: reverie2129
   version: "0.1.0"
+  homepage: https://github.com/reverie2129/hive-optimization-skill-en
 ---
 
 # Hive Best Practices (MapReduce Job Optimization)

@@ -1,0 +1,47 @@
+{
+  "skillName": "hive-optimization-skill",
+  "providers": [
+    {
+      "id": "cursor",
+      "displayName": "Cursor",
+      "distPath": "dist/cursor/.cursor/skills/hive-optimization-skill",
+      "globalPath": "~/.cursor/skills/hive-optimization-skill",
+      "projectPath": ".cursor/skills/hive-optimization-skill"
+    },
+    {
+      "id": "claude",
+      "displayName": "Claude Code",
+      "distPath": "dist/claude/.claude/skills/hive-optimization-skill",
+      "globalPath": "~/.claude/skills/hive-optimization-skill",
+      "projectPath": ".claude/skills/hive-optimization-skill"
+    },
+    {
+      "id": "codex",
+      "displayName": "Codex CLI",
+      "distPath": "dist/codex/.agents/skills/hive-optimization-skill",
+      "globalPath": "~/.agents/skills/hive-optimization-skill",
+      "projectPath": ".agents/skills/hive-optimization-skill"
+    },
+    {
+      "id": "gemini",
+      "displayName": "Gemini CLI",
+      "distPath": "dist/gemini/.gemini/skills/hive-optimization-skill",
+      "globalPath": "~/.gemini/skills/hive-optimization-skill",
+      "projectPath": ".gemini/skills/hive-optimization-skill"
+    },
+    {
+      "id": "copilot",
+      "displayName": "GitHub Copilot",
+      "distPath": "dist/copilot/.github/skills/hive-optimization-skill",
+      "globalPath": null,
+      "projectPath": ".github/skills/hive-optimization-skill"
+    },
+    {
+      "id": "opencode",
+      "displayName": "OpenCode",
+      "distPath": "dist/opencode/.opencode/skills/hive-optimization-skill",
+      "globalPath": "~/.config/opencode/skills/hive-optimization-skill",
+      "projectPath": ".opencode/skills/hive-optimization-skill"
+    }
+  ]
+}

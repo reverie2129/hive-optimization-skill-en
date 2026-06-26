@@ -1,0 +1,24 @@
+{
+  "name": "hive-optimization-skill",
+  "displayName": "Hive Optimization (MapReduce)",
+  "description": "26 citable rules for Hive on MapReduce: storage, queries, JOINs, data skew, and MR parameter tuning.",
+  "version": "0.1.0",
+  "author": {
+    "name": "reverie2129"
+  },
+  "homepage": "https://github.com/reverie2129/hive-optimization-skill-en",
+  "repository": "https://github.com/reverie2129/hive-optimization-skill-en",
+  "license": "Apache-2.0",
+  "keywords": [
+    "hive",
+    "mapreduce",
+    "hql",
+    "optimization",
+    "data-warehouse",
+    "etl",
+    "orc",
+    "join",
+    "skew"
+  ],
+  "skills": "./skills/"
+}
