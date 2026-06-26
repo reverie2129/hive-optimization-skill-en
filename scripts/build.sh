@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Build provider-specific skill layouts from skill/hive-optimization-skill/
+# Build provider-specific skill layouts from skills/hive-optimization-skill/
 # Pattern inspired by https://github.com/pbakaus/impeccable (source -> dist per harness)
 
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-SOURCE="$ROOT/skill/hive-optimization-skill"
+SOURCE="$ROOT/skills/hive-optimization-skill"
 DIST="$ROOT/dist"
 
 if [[ ! -f "$SOURCE/SKILL.md" ]]; then
@@ -45,10 +45,13 @@ copy_skill "$DIST/opencode/.opencode/skills/hive-optimization-skill"
 # Universal flat copy (for manual symlink / custom harnesses)
 copy_skill "$DIST/universal/hive-optimization-skill"
 
-# Cursor plugin bundle (marketplace / local plugin test)
+# Plugin bundle (Cursor + Claude marketplace / local plugin test)
+# Note: the repo root itself is also a valid Cursor + Claude plugin
+# (skills/ + .cursor-plugin/ + .claude-plugin/), so this bundle is a convenience copy.
 PLUGIN_ROOT="$DIST/plugin"
-mkdir -p "$PLUGIN_ROOT/.cursor-plugin" "$PLUGIN_ROOT/skills/hive-optimization-skill"
+mkdir -p "$PLUGIN_ROOT/.cursor-plugin" "$PLUGIN_ROOT/.claude-plugin" "$PLUGIN_ROOT/skills/hive-optimization-skill"
 cp "$ROOT/.cursor-plugin/plugin.json" "$PLUGIN_ROOT/.cursor-plugin/"
+cp "$ROOT/.claude-plugin/plugin.json" "$PLUGIN_ROOT/.claude-plugin/"
 cp "$SOURCE/SKILL.md" "$PLUGIN_ROOT/skills/hive-optimization-skill/"
 cp -R "$SOURCE/rules" "$PLUGIN_ROOT/skills/hive-optimization-skill/"
 

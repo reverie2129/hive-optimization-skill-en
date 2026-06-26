@@ -26,7 +26,7 @@ Reload your agent, then ask: *"Why is this Hive job stuck at 99%?"* or invoke `/
 ## Architecture
 
 ```
-skill/hive-optimization-skill/     # Source of truth (edit here)
+skills/hive-optimization-skill/    # Source of truth (edit here; read directly by Cursor & Claude)
   SKILL.md
   rules/                           # 26 atomic rules
 scripts/build.sh                   # -> dist/{cursor,claude,codex,...}
@@ -63,6 +63,8 @@ Enable Agent Skills in Cursor Settings → Rules. Marketplace: submit repo at [c
 ```bash
 cp -r dist/claude/.claude/skills/hive-optimization-skill ~/.claude/skills/
 ```
+
+Or install as a plugin (the repo root is a valid Claude plugin via `.claude-plugin/plugin.json` + `skills/`): add it to a marketplace and run `/plugin install hive-optimization-skill`. Validate locally with `claude plugin validate .`.
 
 **Codex CLI**
 
@@ -123,7 +125,7 @@ cd .hive-optimization-skill && ./scripts/build.sh && ./scripts/install.sh --proj
 
 ## Contributing
 
-Edit files under `skill/hive-optimization-skill/`, run `./scripts/build.sh`, verify install. New rules: follow `skill/hive-optimization-skill/rules/_template.md`. Keep [hive-optimization-skill](https://github.com/reverie2129/hive-optimization-skill) (Chinese) in sync when possible.
+Edit files under `skills/hive-optimization-skill/`, run `./scripts/build.sh`, verify install. New rules: follow `skills/hive-optimization-skill/rules/_template.md`. Keep [hive-optimization-skill](https://github.com/reverie2129/hive-optimization-skill) (Chinese) in sync when possible.
 
 ## License
 

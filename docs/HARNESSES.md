@@ -1,6 +1,6 @@
 # Agent Harness Reference
 
-This skill follows the [Agent Skills specification](https://agentskills.io/specification). Source of truth: `skill/hive-optimization-skill/`. Run `./scripts/build.sh` to generate per-provider layouts under `dist/`.
+This skill follows the [Agent Skills specification](https://agentskills.io/specification). Source of truth: `skills/hive-optimization-skill/` (also the directory Cursor and Claude Code read directly). Run `./scripts/build.sh` to generate per-provider layouts under `dist/`.
 
 ## Provider Matrix
 
