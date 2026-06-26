@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/logo.png" width="128" alt="Hive Optimization Skill logo">
+</p>
+
 # Hive Optimization Skill · Hive on MapReduce Best Practices (English)
 
 > An Agent Skill for optimizing **Hive on MapReduce** jobs: **26 citable rules across 6 categories**. Follows the [Agent Skills spec](https://agentskills.io/specification) and ships builds for **Cursor, Claude Code, Codex, Gemini CLI, GitHub Copilot, and OpenCode** — same pattern as [Impeccable](https://github.com/pbakaus/impeccable).
